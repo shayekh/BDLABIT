@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:drawSelectorOnTop="true"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00ACC1"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:text="BD Lab IT is a professional web and apps development company that endeavor on heighly profecient, timely delivered, cost effective services.
+
+With a large team of developers, designers, engineers and markerts, we work day in and day out on developing beautiful, powerful and user-friendly apps and website."
+    android:padding="5dp"
+    />
+    </android.support.v7.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/card"
+        android:layout_height="3dp"
+        android:id="@+id/v"
+
+        />
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@id/v"
+        android:dividerHeight="1dp"
+        android:divider="#212121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>
